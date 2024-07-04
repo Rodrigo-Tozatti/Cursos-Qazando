@@ -1,0 +1,9 @@
+
+Nodejs
+    * Verificar se tem node instalado
+        No terminal (prompt de comando) digite: node --version
+    * Instalador: https://nodejs.org/pt
+
+VSCode
+    * Instalador: https://code.visualstudio.com/download
+    

@@ -1,0 +1,23 @@
+
+
+1 - Instalar o Java
+    site: https://www.oracle.com/java/technologies/downloads/#jdk22-mac
+    arquivo: https://download.oracle.com/java/22/latest/jdk-22_macos-x64_bin.dmg (sha256)
+    Verificar se está instalado: java --version
+
+2 - Instalar o Node
+    site: https://nodejs.org/en
+    Verificar se está instalado: node --version
+
+3 - Instalando o Appium
+    Entre no site do Codeceptjs https://codecept.io > Guides > Mobile Testing
+    3.1 - instale o appium doctor com o comando: sudo npm i -g appium-doctor (utilize o sudo para desbloquear com senha)
+    3.2 - rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)
+    3.3 - instle o appium com o comando: sudo npm i -g appium
+    3.4 - instale o Appium desktop
+        3.4.1 repositório: https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
+        3.4.2 arquivo: https://github.com/appium/appium-desktop/releases/download/v1.22.3-4/Appium-Server-GUI-mac-1.22.3-4.dmg
+
+
+Codeceptjs
+site: https://codecept.io

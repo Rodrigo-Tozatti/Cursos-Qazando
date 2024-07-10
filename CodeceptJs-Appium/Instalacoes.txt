@@ -17,7 +17,8 @@
     3.4 - instale o Appium desktop
         3.4.1 repositório: https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
         3.4.2 arquivo: https://github.com/appium/appium-desktop/releases/download/v1.22.3-4/Appium-Server-GUI-mac-1.22.3-4.dmg
-
+            OBS: depois de tentar abrir uma vez o appium desktop será necessário entrar em 
+            'preferências do sistema' > 'segurança e privacidade' (e autorizar o sistema a abrir o Appium desktop)
 
 Codeceptjs
 site: https://codecept.io

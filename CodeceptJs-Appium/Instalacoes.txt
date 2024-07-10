@@ -20,5 +20,15 @@
             OBS: depois de tentar abrir uma vez o appium desktop será necessário entrar em 
             'preferências do sistema' > 'segurança e privacidade' (e autorizar o sistema a abrir o Appium desktop)
 
+4 - Instalar o Xcode
+    Para o Macbook 2017 a versão do xcode disponível é a Xcode 14.2, para baixar-la é necessário:
+        4.1 - entrar no site: https://developer.apple.com/br/support/xcode/
+        4.2 - acessar a página: https://developer.apple.com/download/all/?q=xcode
+            obs: será necessário entrar com a conta (e-mail) e a senha do iCloud (senha geral)
+        4.3 - pesquise a baixe o Xcode 14.2
+
+
+
+
 Codeceptjs
 site: https://codecept.io

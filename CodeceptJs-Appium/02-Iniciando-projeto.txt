@@ -1,7 +1,7 @@
 
 1 - Entre na pasta do projeto através do terminal do Visual Studio Code
 2 - Digite o comando: 
-    2.1 - npm init
+    2.1 - sudo npm init
     2.2 - Responda as perguntas sobre o projeto:
         2.2.1 - package name: (automacao-app) --> (digite enter que automaticamente recebera o nome da pasta)
         2.2.2 - version: (1.0.0) --> clique em enter
@@ -11,9 +11,20 @@
         2.2.6 - git repository: --> enter
         2.2.7 - keywords: --> enter
         2.2.8 - author: --> Rodrigo Tozatti
-        2.2.9 - icense: (ISC) --> enter
+        2.2.9 - license: (ISC) --> enter
         2.2.10 - Is this OK? (yes) --> yes
 3 - Instalando o Codeceptjs
     3.1 - Entre no site do Codeceptjs: https://codecept.io > Guides > Mobile testing
-    3.1 - Instalar o codecept no projeto com o comando: npm install codeceptjs webdriverio@8.6.3 --save
-    
+    3.2 - Instalar o codecept no projeto com o comando: sudo npm install codeceptjs webdriverio@8.6.3 --save
+    3.3 - Iniciando o projeto: sudo npx codeceptjs init
+    3.4 - Responda as perguntas da inicialização
+        3.4.1 - Do you plan to write tests in TypeScript? --> n
+        3.4.2 - Where are your tests located? (./*_test.ts) --> enter
+        3.4.3 - What helpers do you want to use? (Use arrow keys) --> escolha Appium
+        3.4.4 - Where should logs, screenshots, and reports to be stored? (./output) --> enter
+        3.4.5 - Do you want to enable localization for tests? http://bit.ly/3GNUBbh (Use arrow keys) --> escolha English
+        3.4.6 - [Appium] Application package. Path to file or url (http://localhost) --> enter (será necessário configurar mais a frente) 
+        3.4.7 - [Appium] Mobile Platform (Use arrow keys) --> escolha a plataforma (nesse caso iOS)
+        3.4.8 - [Appium] Device to run tests on (emulator) --> apague o texto (emulator) e escreva o nome do emulador, nesse caso - iPhone 14 Pro Max
+        3.4.9 - Feature which is being tested (ex: account, login, etc) --> escreva login
+        3.4.10 - Filename of a test (login_test.js) --> enter

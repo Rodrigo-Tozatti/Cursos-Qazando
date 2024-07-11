@@ -42,7 +42,5 @@
     5.6 - para garantir que a configuração está correta execute o comando: echo $JAVA_HOME
         o resultado tem que ser o caminho do java
 
-
-
-Codeceptjs
-site: https://codecept.io
+4 - Codeceptjs --> ver instalação em 02-Iniciando-projeto
+    site: https://codecept.io

@@ -1,0 +1,19 @@
+
+1 - Entre na pasta do projeto através do terminal do Visual Studio Code
+2 - Digite o comando: 
+    2.1 - npm init
+    2.2 - Responda as perguntas sobre o projeto:
+        2.2.1 - package name: (automacao-app) --> (digite enter que automaticamente recebera o nome da pasta)
+        2.2.2 - version: (1.0.0) --> clique em enter
+        2.2.3 - description: --> escreva a descrição do projeto
+        2.2.4 - entry point: (index.js) --> enter
+        2.2.5 - test command: --> enter
+        2.2.6 - git repository: --> enter
+        2.2.7 - keywords: --> enter
+        2.2.8 - author: --> Rodrigo Tozatti
+        2.2.9 - icense: (ISC) --> enter
+        2.2.10 - Is this OK? (yes) --> yes
+3 - Instalando o Codeceptjs
+    3.1 - Entre no site do Codeceptjs: https://codecept.io > Guides > Mobile testing
+    3.1 - Instalar o codecept no projeto com o comando: npm install codeceptjs webdriverio@8.6.3 --save
+    

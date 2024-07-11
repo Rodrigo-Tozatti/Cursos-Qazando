@@ -22,11 +22,25 @@
 
 4 - Instalar o Xcode
     Para o Macbook 2017 a versão do xcode disponível é a Xcode 14.2, para baixar-la é necessário:
-        4.1 - entrar no site: https://developer.apple.com/br/support/xcode/
-        4.2 - acessar a página: https://developer.apple.com/download/all/?q=xcode
-            obs: será necessário entrar com a conta (e-mail) e a senha do iCloud (senha geral)
-        4.3 - pesquise a baixe o Xcode 14.2
+    4.1 - entrar no site: https://developer.apple.com/br/support/xcode/
+    4.2 - acessar a página: https://developer.apple.com/download/all/?q=xcode
+        obs: será necessário entrar com a conta (e-mail) e a senha do iCloud (senha geral)
+    4.3 - pesquise a baixe o Xcode 14.2
 
+5 - Configurar as variáveis de ambiente do Java no mac
+    5.1 - encontre o caminho do java com o comando: /usr/libexec/java_home
+    5.2 - abra o arquivo 'nano' para configurar as variáveis com o comando: nano ~/.zshrc  (obs: estou utilizando o terminal zshrc)
+    5.3 - adicione as variáveis de ambiente:
+        export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home
+        export PATH=$JAVA_HOME/bin:$PATH
+        5.3.1 - obs: /Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home --> substitua pelo caminho encontrado no item 5.1
+    5.4 - saia do nano com os comandos: 
+        control + x 
+        y
+        Enter 
+    5.5 - salve as confogurações utilizando o comando: source ~/.zshrc
+    5.6 - para garantir que a configuração está correta execute o comando: echo $JAVA_HOME
+        o resultado tem que ser o caminho do java
 
 
 

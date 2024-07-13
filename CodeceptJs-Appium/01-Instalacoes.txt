@@ -27,7 +27,10 @@
         obs: será necessário entrar com a conta (e-mail) e a senha do iCloud (senha geral)
     4.3 - pesquise a baixe o Xcode 14.2
 
-5 - Configurar as variáveis de ambiente do Java no mac
+5 - Instalar Android Studio
+    5.1 - baixar o Android Studio no site: https://developer.android.com/studio?hl=pt-br
+
+6 - Configurar as variáveis de ambiente do Java no mac
     5.1 - encontre o caminho do java com o comando: /usr/libexec/java_home
     5.2 - abra o arquivo 'nano' para configurar as variáveis com o comando: nano ~/.zshrc  (obs: estou utilizando o terminal zshrc)
     5.3 - adicione as variáveis de ambiente:
@@ -42,5 +45,5 @@
     5.6 - para garantir que a configuração está correta execute o comando: echo $JAVA_HOME
         o resultado tem que ser o caminho do java
 
-4 - Codeceptjs --> ver instalação em 02-Iniciando-projeto
+7 - Codeceptjs --> ver instalação em 02-Iniciando-projeto
     site: https://codecept.io

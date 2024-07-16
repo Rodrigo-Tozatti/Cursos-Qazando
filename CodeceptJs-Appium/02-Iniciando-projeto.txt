@@ -28,3 +28,17 @@
         3.4.8 - [Appium] Device to run tests on (emulator) --> apague o texto (emulator) e escreva o nome do emulador, nesse caso - iPhone 14 Pro Max
         3.4.9 - Feature which is being tested (ex: account, login, etc) --> escreva login
         3.4.10 - Filename of a test (login_test.js) --> enter
+4 - Configurar as capabilities em --> codecept.conf.js
+        Appium: {
+        platform: 'Android',
+        app: '/Users/rodrigorossetitozatti/Repositorio - Macbook/Cursos-Qazando/Automacao-Android/App-Android/app-release.apk', // Caminho para o seu APK ou IPA
+        desiredCapabilities: {
+            appPackage: 'com.qazandoapp', // Pacote do aplicativo
+            appActivity: 'MainActivity', // Atividade principal do aplicativo
+            deviceName: 'Qazando-mobile',
+            platformVersion: '14.0' // Versão do Android
+            //automationName: 'UiAutomator2'
+        }
+        }
+5 - Rodar todos os testes para verificar a configurção
+        https://codecept.io > Quickstart --> executar o comando Run a test --> npx codeceptjs run

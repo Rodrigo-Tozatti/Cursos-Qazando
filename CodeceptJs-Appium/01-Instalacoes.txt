@@ -30,13 +30,24 @@
 5 - Instalar Android Studio
     5.1 - baixar o Android Studio no site: https://developer.android.com/studio?hl=pt-br
 
-6 - Configurar as variáveis de ambiente do Java no mac
+6 - Configurar as variáveis de ambiente do Java e Android no mac
     5.1 - encontre o caminho do java com o comando: /usr/libexec/java_home
     5.2 - abra o arquivo 'nano' para configurar as variáveis com o comando: nano ~/.zshrc  (obs: estou utilizando o terminal zshrc)
     5.3 - adicione as variáveis de ambiente:
         export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home
         export PATH=$JAVA_HOME/bin:$PATH
         5.3.1 - obs: /Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home --> substitua pelo caminho encontrado no item 5.1
+        
+        5.3.2 - Exemplo de como ficou as variáveis de ambiente do java e Android (exemplo real)
+
+                export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home
+                export PATH=$JAVA_HOME/bin:$PATH
+
+                export ANDROID_HOME=/Users/rodrigorossetitozatti/Library/Android/sdk
+                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/emulator
+                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools
+
     5.4 - saia do nano com os comandos: 
         control + x 
         y

@@ -1,4 +1,8 @@
 
+0 - Instalar o HomerBrew --> obs: verificar se precisa utilizar o sudo
+    0.1 - /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    0.2 - brew install carthage 
+
 1 - Git: https://git-scm.com/
     Depois de instalado configurar nome e e-mail no prompt de comando
         git config --global user.name "seu nome" (obs: seu nome entre aspas)
@@ -26,6 +30,26 @@
     Verificar se está instalado: node --version
 
 5 - Instalando o Appium
+    Appium UIAutomator2
+    5.1 - sudo npm install -g appium
+    5.2 - instale o Appium desktop
+        5.2.1 repositório: https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
+        5.2.2 arquivo: https://github.com/appium/appium-desktop/releases/download/v1.22.3-4/Appium-Server-GUI-mac-1.22.3-4.dmg
+            OBS: depois de tentar abrir uma vez o appium desktop será necessário entrar em 
+            'preferências do sistema' > 'segurança e privacidade' (e autorizar o sistema a abrir o Appium desktop)
+    5.3 - Instale o Appium UIAutomator2
+        5.3.1 - Android Home > SDK Maneger > SDK tools --> instale o Android Auto API Simulators
+        5.3.2 - Configure as varáveis de ambiente (item 8 desse manual de instalações)
+        5.3.3 - Desligue o servidor Appium e execute a linha de comando: sudo appium driver install uiautomator2
+        5.3.3 - Rode o appium-doctor que já é instalado com o UIAutomator2: appium driver doctor uiautomator2
+    5.4 - Somente se for necessário rode o appium-doctor
+        Appium-doctor
+        *** 5.1 - sudo npm install -g appium-doctor (utilize o sudo para desbloquear com senha)
+        ***5.2 - rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)
+    
+
+
+
     Entre no site do Codeceptjs https://codecept.io > Guides > Mobile Testing
     5.1 - instale o appium doctor com o comando: sudo npm i -g appium-doctor (utilize o sudo para desbloquear com senha)
     5.2 - rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)

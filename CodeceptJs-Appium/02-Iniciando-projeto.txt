@@ -1,4 +1,8 @@
 
+0 - Antes de iniciar o projeto instalar as dependências do Appium UIAutomator2
+    0.1 - sudo appium driver install xcuitest ---> iOS
+    0.2 - sudo appium driver install uiautomator2 ---> Android
+    0.3 - verificar se tudo está instalado: appium driver list
 1 - Entre na pasta do projeto através do terminal do Visual Studio Code
 2 - Digite o comando: 
     2.1 - sudo npm init

@@ -42,23 +42,17 @@
         5.3.2 - Configure as varáveis de ambiente (item 8 desse manual de instalações)
         5.3.3 - Desligue o servidor Appium e execute a linha de comando: sudo appium driver install uiautomator2
         5.3.3 - Rode o appium-doctor que já é instalado com o UIAutomator2: appium driver doctor uiautomator2
-    5.4 - Somente se for necessário rode o appium-doctor
+    5.4 - Instalar as dependências do Appium UIAutomator2
+        5.4.1 - sudo appium driver install xcuitest ---> iOS
+        5.4.2 - sudo appium driver install uiautomator2 ---> Android
+        5.4.3 - verificar se tudo está instalado: appium driver list
+
+    Appium normal
+    5.1 - sudo npm i --location=global appium
+    5.2 - Appium-doctor
         Appium-doctor
-        *** 5.1 - sudo npm install -g appium-doctor (utilize o sudo para desbloquear com senha)
-        ***5.2 - rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)
-    
-
-
-
-    Entre no site do Codeceptjs https://codecept.io > Guides > Mobile Testing
-    5.1 - instale o appium doctor com o comando: sudo npm i -g appium-doctor (utilize o sudo para desbloquear com senha)
-    5.2 - rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)
-    5.3 - instle o appium com o comando: sudo npm i -g appium
-    5.4 - instale o Appium desktop
-        5.4.1 repositório: https://github.com/appium/appium-desktop/releases/tag/v1.22.3-4
-        5.4.2 arquivo: https://github.com/appium/appium-desktop/releases/download/v1.22.3-4/Appium-Server-GUI-mac-1.22.3-4.dmg
-            OBS: depois de tentar abrir uma vez o appium desktop será necessário entrar em 
-            'preferências do sistema' > 'segurança e privacidade' (e autorizar o sistema a abrir o Appium desktop)
+        5.2.1 - sudo npm install -g appium-doctor (utilize o sudo para desbloquear com senha)
+        5.2.2- rode o appium doctor no terminal com o comando: appium-doctor (para verificar o sistema)
 
 6 - Instalar o Xcode
     Para o Macbook 2017 a versão do xcode disponível é a Xcode 14.2, para baixar-la é necessário:
@@ -71,29 +65,22 @@
     7.1 - baixar o Android Studio no site: https://developer.android.com/studio?hl=pt-br
 
 8 - Configurar as variáveis de ambiente do Java e Android no mac
-    8.1 - encontre o caminho do java com o comando: /usr/libexec/java_home
-    8.2 - abra o arquivo 'nano' para configurar as variáveis com o comando: nano ~/.zshrc  (obs: estou utilizando o terminal zshrc)
-    8.3 - adicione as variáveis de ambiente:
-        export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home
-        export PATH=$JAVA_HOME/bin:$PATH
-        8.3.1 - obs: /Library/Java/JavaVirtualMachines/jdk1.x.x_xx.jdk/Contents/Home --> substitua pelo caminho encontrado no item 5.1
-        
-        8.3.2 - Exemplo de como ficou as variáveis de ambiente do java e Android (exemplo real)
+    8.1 - Exemplo de como ficou as variáveis de ambiente do java e Android (exemplo real)
 
-                export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home
-                export PATH=$JAVA_HOME/bin:$PATH
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-22.jdk/Contents/Home
+    export PATH=$JAVA_HOME/bin:$PATH
 
-                export ANDROID_HOME=/Users/rodrigorossetitozatti/Library/Android/sdk
-                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/emulator
-                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-                export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools
+    export ANDROID_HOME=/Users/rodrigotozatti/Library/Android/sdk
+    export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/emulator
+    export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+    export PATH=$PATH=$ANDROID_HOME/tools:$ANDROID_HOME/tools
 
-    8.4 - saia do nano com os comandos: 
+    8.2 - saia do nano com os comandos: 
         control + x 
         y
         Enter 
-    8.5 - salve as confogurações utilizando o comando: source ~/.zshrc
-    8.6 - para garantir que a configuração está correta execute o comando: echo $JAVA_HOME
+    8.3 - salve as confogurações utilizando o comando: source ~/.zshrc
+    8.4 - para garantir que a configuração está correta execute o comando: echo $JAVA_HOME
         o resultado tem que ser o caminho do java
 
 9 - Codeceptjs --> ver instalação em 02-Iniciando-projeto

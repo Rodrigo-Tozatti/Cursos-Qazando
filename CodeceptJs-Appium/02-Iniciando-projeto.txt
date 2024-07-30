@@ -19,7 +19,8 @@
         2.2.10 - Is this OK? (yes) --> yes
 3 - Instalando o Codeceptjs
     3.1 - Entre no site do Codeceptjs: https://codecept.io > Guides > Mobile testing
-    3.2 - Instalar o codecept no projeto com o comando: sudo npm install codeceptjs webdriverio@8.6.3 --save
+    3.2 Instalar o codecept no projeto com o comando: sudo npx create-codeceptjs . --webdriverio
+        //3.2 - Instalar o codecept no projeto com o comando: sudo npm install codeceptjs webdriverio@8.6.3 --save
     3.3 - Iniciando o projeto: sudo npx codeceptjs init
     3.4 - Responda as perguntas da inicialização
         3.4.1 - Do you plan to write tests in TypeScript? --> n

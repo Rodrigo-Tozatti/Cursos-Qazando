@@ -14,14 +14,7 @@ exports.config = {
     Appium: {
       app: '/Users/rodrigotozatti/Repositorio - Mac/Cursos-Qazando/Automacao-iOS/App-iOS/qazandoapp.app',
       platform: 'iOS',
-      desiredCapabilities: {
-        deviceName: 'iPhone 14 Pro Max', // Nome do dispositivo ou simulador
-        platformVersion: '16.2', // Versão do iOS
-        automationName: 'XCUITest', // Framework de automação
-        app: '//Users/rodrigotozatti/Repositorio - Mac/Cursos-Qazando/Automacao-iOS/App-iOS/qazandoapp.app', // Caminho para o seu aplicativo iOS
-        noReset: true,
-        fullReset: false
-      }
+      device: 'iPhone 14 Pro Max'
     }
   },
   include: {
